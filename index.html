@@ -545,37 +545,47 @@ footer p {
     transition: none !important;
   }
 }
-  .categories {
-  padding: 60px 5%;
+.category-products {
+  padding: 55px 4% 75px;
   text-align: center;
 }
 
-.categories h2 {
-  font-size: 32px;
+.category-products h2 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 
-.category-grid {
+.category-products-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 18px;
 }
 
-.category-card {
-  background: #f3eee8;
-  padding: 45px 15px;
-  border-radius: 12px;
+.category-product-card {
+  background: #efede7;
+  padding: 35px 15px;
+  border: 1px solid #e2ddd4;
   transition: 0.3s;
 }
 
-.category-card:hover {
-  background: #e8ddd1;
-  transform: translateY(-5px);
+.category-product-card:hover {
+  background: #e5ded4;
+  transform: translateY(-4px);
 }
 
-.category-card h3 {
-  font-size: 22px;
+.category-product-card h3 {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 400;
 }
+
+@media (max-width: 760px) {
+  .category-products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}  
 </style>
 </head>
 
@@ -672,7 +682,53 @@ footer p {
   </a>
 
 </section>
+<!-- PRODUCT CATEGORIES -->
+<section class="category-products">
+  <div class="container">
+    <div class="eyebrow">EXPLORE OUR CATEGORIES</div>
+    <h2>Shop By Category</h2>
 
+    <div class="category-products-grid">
+
+      <a class="category-product-card" href="#collection">
+        <h3>Vases</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Table Lamps</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Wall Art</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Candle Holders</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Trays</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Decorative Bowls</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Mirrors</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Sculptures</h3>
+      </a>
+
+      <a class="category-product-card" href="#collection">
+        <h3>Planters</h3>
+      </a>
+
+    </div>
+  </div>
+</section>
 <section class="collection" id="collection">
   <div class="container">
 
