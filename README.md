@@ -1,2 +1,2 @@
-# CREATIIVE-SPACES
+# CREATIIVE SPACES
 Creative Spaces Showroom Website
