@@ -545,11 +545,53 @@ footer p {
     transition: none !important;
   }
 }
+  .categories {
+  padding: 60px 5%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background: #f3eee8;
+  padding: 45px 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.category-card:hover {
+  background: #e8ddd1;
+  transform: translateY(-5px);
+}
+
+.category-card h3 {
+  font-size: 22px;
+}
 </style>
 </head>
 
 <body>
-
+<!-- PRODUCT CATEGORIES -->
+<section class="categories">
+  <h2>Explore Our Collections</h2>
+  <div class="category-grid">
+    <div class="category-card"><h3>Vases</h3></div>
+    <div class="category-card"><h3>Table Lamps</h3></div>
+    <div class="category-card"><h3>Wall Art</h3></div>
+    <div class="category-card"><h3>Candle Holders</h3></div>
+    <div class="category-card"><h3>Trays</h3></div>
+    <div class="category-card"><h3>Home Decor</h3></div>
+  </div>
+</section>
 <div class="announcement">
   THOUGHTFULLY DESIGNED SPACES · TIMELESS HOME DECOR
 </div>
