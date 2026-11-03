@@ -30,7 +30,14 @@
     .menu-btn { display: none; background: transparent; border: 1px solid var(--line); padding: 9px 12px; cursor: pointer; }
     .hero { max-width: 1440px; margin: 0 auto; padding: 28px; }
     .hero-panel { min-height: 500px; position: relative; display: flex; align-items: center; overflow: hidden; background: #c8b9a4; }
-    .hero-panel::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(30,25,20,.62), rgba(30,25,20,.24) 52%, rgba(30,25,20,.02)), url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=2000&q=85') center/cover; }
+    .hero-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(30,25,20,.55), rgba(30,25,20,.18) 52%, rgba(30,25,20,.02)),
+    url('hero-new.png') center/cover;
+}
     .hero-content { position: relative; max-width: 620px; padding: 65px clamp(26px, 7vw, 100px); color: white; }
     .eyebrow { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 22px; }
     h1 { font-family: Georgia, 'Times New Roman', serif; font-size: clamp(44px, 6vw, 78px); font-weight: 400; line-height: .99; letter-spacing: -1.5px; margin: 0 0 24px; }
